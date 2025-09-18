@@ -3,11 +3,21 @@
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
-.main_box{
-    background: url(photo.jpg);
-    height: 100vh;
-    background-size: cover;
+.main_box {
+    background: url("photo.jpg") no-repeat center center;
+    height: 100vh;              
+    width: 100%;                
+    background-size: cover;     
+    background-attachment: fixed; 
 }
+@media (max-width: 768px) {
+  .main_box {
+    background-attachment: scroll;
+  }
+}
+
+
+
 .btn_one i{
     color: white;
     font-size: 30px;
